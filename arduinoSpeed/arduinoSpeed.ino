@@ -40,7 +40,7 @@ void  loop()
           contar=0;
           last=millis();
           Serial.print("      MPH   "); 
-          Serial.print(rpm*0.0080622311);
+          Serial.print(rpm*0.0080622311); //rpm*(circumference of your wheel in inches)*(60 min/hr)*(1/63,360 miles/inches)=speed in MPH
           
           LCDPrint  ();
       }
